@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel=""stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header>
+        <h1>My Portfolio</h1>
         <nav>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact Me</a></li>
-                <li><button id="theme-toggle ">Change Theme</button></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work and get to know me.</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hey, I am Nidhi Chaurasia. I'm a Software Engineer, Data Engineering Enthusiast and a Hobbyist Artist.</p>
+            <img src="./images/profile.png" alt="Profile Image" class="profile-image">
+
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Sales Data Analysis</h3>
+                <p>This is practice assessment from Neostat for XYZ company to load their sales data to SQL Server DB and gain insights from their data</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+</html>
